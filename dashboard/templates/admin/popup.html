@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<title>Modal Popup Box</title>
+<style>
+
+
+
+*{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
+
+/* Full-width input fields */
+/* width */
+.webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+.webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+.webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+	font-size:20px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatar {
+    width: 200px;
+	height:200px;
+    border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 150%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    overflow: auto;
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+	padding-bottom: 30px;
+    overflow: auto;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+</style>
+</style>
+<body background="https://www.africaprimenews.com/wp-content/uploads/2018/05/unnamed.png">
+
+
+
+
+
+<div id="modal-wrapper" class="modal webkit-scrollbar webkit-scrollbar-track webkit-scrollbar-thumb webkit-scrollbar-thumb" style="overflow: auto;">
+  
+  <form class="modal-content animate" action="/action_page.php">
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="https://www.africaprimenews.com/wp-content/uploads/2018/05/unnamed.png" alt="Avatar" class="avatar">
+      <h1 style="text-align:center">Modal Popup Box</h1>
+    </div>
+
+    <div class="container">
+<div class="">
+            <div class="box-header with-border">
+              
+            </div>
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-xs-3">
+                  <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <input type="text" class="form-control" placeholder="Email address">
+                </div>
+                <div class="col-xs-3">
+                  <select class="col-xs-3 form-control">
+                    <option>SELECT LEVEL</option>
+                      <option>64RC</option>
+                      <option>65RC</option>
+                      <option>66RC</option>
+                      <option>67RC</option>
+                      <option>68RC</option>
+                      <option>Master Level</option>
+                      <option>Post Graduate Level</option>
+                      <option>PHD Level</option>
+                      <option>Professorship Level</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <input type="text" class="form-control" placeholder="Hostel">
+                </div>
+                <div class="col-xs-3">
+                  <select class="col-xs-3 form-control">
+                    <option>Special Circumstances</option>
+                    <option>Circumstance 1</option>
+                      <option> Circumstance 2</option>
+                      <option>Circumstance 3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <br>
+            <h1>Contact Information</h1>
+
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <input type="text" class="form-control" placeholder="Street address">
+                </div>
+                <div class="col-xs-3">
+                  <input type="text" class="form-control" placeholder="City">
+                </div>
+              </div>
+            </div>
+
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <select class="col-xs-3 form-control">
+
+                      <option>Abia</option>
+                      <option>Adamawa</option>
+                      <option>Akwa Ibom</option>
+                      <option>Anambra</option>
+                      <option>Bauchi</option>
+                      <option>Bayelsa</option>
+                      <option>Benue</option>
+                      <option>Borno</option>
+                      <option>Cross River</option>
+                      <option>Delta</option>
+                      <option>Ebonyi</option>
+                      <option>Enugu</option>
+                      <option>Edo</option>
+                      <option>Ekiti</option>        
+                      <option>Gombe</option>
+                      <option>Imo</option>
+                      <option>Jigawa</option>
+                      <option>Kaduna</option>
+                      <option>Kano</option>
+                      <option>Kastina</option>
+                      <option>Kebbi</option>
+                      <option>Kogi</option>
+                      <option>Kwara</option>
+                      <option>Lagos</option>
+                      <option>Nasarawa</option>
+                      <option>Niger</option>
+                      <option>Ogun</option>
+                      <option>Ondo</option>
+                      <option>Osun</option>
+                      <option>Oyo</option>
+                      <option>Plateau</option>
+                      <option>Rivers</option>
+                      <option>Sokoto</option>
+                      <option>Taraba</option>
+                      <option>Yobe</option>
+                      <option>Zamfara</option>
+
+                  </select>
+                </div>
+                <div class="col-xs-3">
+                  <input type="text" class="form-control" placeholder="City">
+                </div>
+              </div>
+            </div>
+    </div>
+    
+  </form>
+  
+</div>
+
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
